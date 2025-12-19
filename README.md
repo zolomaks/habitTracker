@@ -16,4 +16,4 @@ HabitTracker — это концепт мобильного приложения
 - CSS-фреймворк **Bulma**
 
 ## Ссылка на проект
-GitHub Pages:
+- [Публичная страница на GitHub Pages](https://zolomaks.github.io/habitTracker/)

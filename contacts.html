@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HabitTracker — Контакты</title>
+  <link rel="icon" href="assets/images/icon.png">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css">
+
+  <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+<body>
+
+<nav class="navbar is-light">
+  <div class="navbar-brand">
+    <a class="navbar-item has-text-weight-bold" href="index.html">HabitTracker</a>
+  </div>
+  <div class="navbar-menu">
+    <div class="navbar-end">
+      <a href="index.html" class="navbar-item">Главная</a>
+      <a href="faq.html" class="navbar-item">FAQ</a>
+      <a href="contacts.html" class="navbar-item is-active">Контакты</a>
+    </div>
+  </div>
+</nav>
+
+<section class="section">
+  <div class="container">
+    <h2 class="title is-2">Связаться с нами</h2>
+
+    <div class="columns">
+      <div class="column is-6">
+        <form>
+          <div class="field">
+            <label class="label">Имя</label>
+            <input class="input" type="text" required>
+          </div>
+
+          <div class="field">
+            <label class="label">Email</label>
+            <input class="input" type="email" required>
+          </div>
+
+          <div class="field">
+            <label class="label">Тема</label>
+            <div class="select is-fullwidth">
+              <select required>
+                <option disabled selected>Выберите тему</option>
+                <option>Вопрос</option>
+                <option>Предложение</option>
+                <option>Отзыв</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="field">
+            <label class="label">Сообщение</label>
+            <textarea class="textarea" rows="4" required></textarea>
+          </div>
+
+          <div class="field">
+            <label class="checkbox">
+              <input type="checkbox" required>
+              Согласие на обработку персональных данных
+            </label>
+          </div>
+
+          <button class="button is-primary">Отправить</button>
+        </form>
+      </div>
+
+      <div class="column is-6">
+        <h3 class="title is-4">Контакты</h3>
+        <p>Email: info@habittracker.ru</p>
+        <p>Телефон: +7 (999) 123-45-67</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer id="contacts" class="footer">
+  <div class="content has-text-centered">
+    <p><strong>HabitTracker</strong> © 2025</p>
+    <p>
+      Контакты и социальные сети:
+    </p>
+    <p>
+      <a><i class="fab fa-telegram"></i></a>
+      <a><i class="fab fa-vk"></i></a>
+      <a><i class="fab fa-github"></i></a>
+    </p>
+  </div>
+</footer>
+
+</body>
+</html>

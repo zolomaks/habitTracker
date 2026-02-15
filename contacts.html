@@ -33,43 +33,77 @@
 
     <div class="columns">
       <div class="column is-6">
-        <form>
-          <div class="field">
-            <label class="label">Имя</label>
-            <input class="input" type="text" required>
-          </div>
+        <form id="feedbackForm">
+  <div class="field">
+    <label class="label">Имя <span class="has-text-danger">*</span></label>
+    <div class="control has-icons-left">
+      <input class="input" type="text" id="fullname" placeholder="Иван Иванов">
+      <span class="icon is-small is-left">
+        <i class="fas fa-user"></i>
+      </span>
+    </div>
+    <p class="help" id="fullnameHelp">Введите ваше имя и фамилию</p>
+  </div>
 
-          <div class="field">
-            <label class="label">Email</label>
-            <input class="input" type="email" required>
-          </div>
+  <div class="field">
+    <label class="label">Email <span class="has-text-danger">*</span></label>
+    <div class="control has-icons-left">
+      <input class="input" type="email" id="email" placeholder="info@example.ru">
+      <span class="icon is-small is-left">
+        <i class="fas fa-envelope"></i>
+      </span>
+    </div>
+    <p class="help" id="emailHelp">Введите корректный email адрес</p>
+  </div>
 
-          <div class="field">
-            <label class="label">Тема</label>
-            <div class="select is-fullwidth">
-              <select required>
-                <option disabled selected>Выберите тему</option>
-                <option>Вопрос</option>
-                <option>Предложение</option>
-                <option>Отзыв</option>
-              </select>
-            </div>
-          </div>
+  <div class="field">
+    <label class="label">Тема <span class="has-text-danger">*</span></label>
+    <div class="control">
+      <div class="select is-fullwidth">
+        <select id="topic" required>
+          <option value="" disabled selected>Выберите тему</option>
+          <option value="Вопрос">Вопрос</option>
+          <option value="Предложение">Предложение</option>
+          <option value="Отзыв">Отзыв</option>
+        </select>
+      </div>
+    </div>
+    <p class="help" id="topicHelp">Выберите тему обращения</p>
+  </div>
 
-          <div class="field">
-            <label class="label">Сообщение</label>
-            <textarea class="textarea" rows="4" required></textarea>
-          </div>
+  <div class="field">
+    <label class="label">Сообщение <span class="has-text-danger">*</span></label>
+    <div class="control">
+      <textarea class="textarea" id="message" rows="4" placeholder="Текст сообщения..."></textarea>
+    </div>
+    <p class="help" id="messageHelp">До 500 символов</p>
+  </div>
 
-          <div class="field">
-            <label class="checkbox">
-              <input type="checkbox" required>
-              Согласие на обработку персональных данных
-            </label>
-          </div>
+  <div class="field">
+    <div class="control">
+      <label class="checkbox">
+        <input type="checkbox" id="agreement" required>
+        Я согласен на обработку персональных данных
+      </label>
+    </div>
+  </div>
 
-          <button class="button is-primary">Отправить</button>
-        </form>
+  <div class="field is-grouped">
+    <div class="control">
+      <button type="submit" class="button is-primary">
+        <span class="icon">
+          <i class="fas fa-paper-plane"></i>
+        </span>
+        <span>Отправить</span>
+      </button>
+    </div>
+    <div class="control">
+      <button type="reset" class="button is-light">
+        <span>Очистить</span>
+      </button>
+    </div>
+  </div>
+</form>
       </div>
 
       <div class="column is-6">
